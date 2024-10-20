@@ -1,0 +1,249 @@
+.movie-container {
+    position: relative;
+    margin-top: 60px;
+    box-shadow: inset 0 0 0 1000px black;
+}
+
+.react-bs-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 7rem 0;
+    gap: 2.5rem;
+}
+
+.react-bs-container>.flex-item {
+    position: relative;
+    color: white;
+}
+
+.react-bs-container>.flex-item>.img {
+    width: 18rem;
+    height: 26rem;
+}
+
+.react-bs-container>.flex-item.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+}
+
+.react-bs-container>.flex-item.second>.title-and-release-date-container {
+    margin-bottom: 0.2rem;
+}
+
+.react-bs-container>.flex-item.second .title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.react-bs-container>.flex-item.second .title:hover {
+    cursor: default;
+}
+
+.react-bs-container>.flex-item.second .release-date {
+    font-size: 2.2rem;
+    color: #ffffff99;
+}
+
+.react-bs-container>.flex-item.second .genres-and-runtime {
+    font-size: 1rem;
+}
+
+.react-bs-container>.flex-item.second .genres-and-runtime>.runtime {
+    margin-left: 5px;
+}
+
+.react-bs-container>.flex-item.second>.rating-and-video-container>.imdb-rating {
+    gap: 5px;
+}
+
+.react-bs-container>.flex-item.second>.rating-and-video-container>.imdb-rating>.bs-star-icon {
+    color: #f4e864;
+    height: 2em;
+    width: 1.2em;
+}
+
+.react-bs-container>.flex-item.second>.rating-and-video-container>.imdb-rating>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    font-weight: bold;
+}
+
+.react-bs-container>.flex-item.second>.rating-and-video-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.react-bs-container>.flex-item.second>.rating-and-video-container>span {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-bs-container>.flex-item.second>.rating-and-video-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.react-bs-container>.flex-item.second .watch-video>a:hover {
+    cursor: pointer;
+    color: #DC3545;
+}
+
+.react-bs-container>.flex-item.second .watch-video>svg {
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+    cursor: default;
+    background: none;
+}
+
+.react-bs-container>.flex-item.second .tagline {
+    font-style: italic;
+    color: #ffffff99;
+    font-size: 1rem;
+}
+
+.react-bs-container>.flex-item.second .summary,
+.top {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.react-bs-container>.flex-item.second .bottom {
+    font-size: 1rem;
+}
+
+.react-bs-container>.flex-item.second .summary {
+    margin-bottom: -10px;
+}
+
+.react-bs-container>.flex-item.second .overview {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+
+    .react-bs-container>.flex-item>.img {
+        width: 16rem;
+        height: 23rem;
+    }
+
+    .react-bs-container>.flex-item.second .title {
+        font-size: 1.8rem;
+    }
+
+    .react-bs-container>.flex-item.second .release-date {
+        font-size: 1.8rem;
+    }
+
+    .react-bs-container>.flex-item.second .genres-and-runtime {
+        font-size: 0.9rem;
+    }
+
+    .react-bs-container>.flex-item .imdb-rating {
+        font-size: 1.1rem;
+    }
+
+    .react-bs-container>.flex-item.second>.rating-and-video-container {
+        font-size: 1rem;
+    }
+
+    .react-bs-container>.flex-item.second .tagline {
+        font-size: 0.9rem;
+    }
+
+    .react-bs-container>.flex-item.second .summary,
+    .top {
+        font-size: 1rem;
+    }
+
+    .react-bs-container>.flex-item.second .bottom {
+        font-size: 0.9rem;
+    }
+
+    .react-bs-container>.flex-item.second .overview {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .movie-container::before {
+        background-position: center;
+    }
+
+    .react-bs-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .react-bs-container>.flex-item.second {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .react-bs-container>.flex-item.second .title {
+        font-size: 1.6rem;
+    }
+
+    .react-bs-container>.flex-item.second .release-date {
+        font-size: 1.6rem;
+    }
+
+    .react-bs-container>.flex-item.second .genres-and-runtime {
+        font-size: 0.8rem;
+    }
+
+    .react-bs-container>.flex-item .imdb-rating {
+        font-size: 1rem;
+    }
+
+    .react-bs-container>.flex-item.second>.rating-and-video-container {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .react-bs-container>.flex-item.second .tagline {
+        font-size: 0.8rem;
+    }
+
+    .react-bs-container>.flex-item.second .summary,
+    .top {
+        font-size: 0.9rem;
+    }
+
+    .react-bs-container>.flex-item.second .bottom {
+        font-size: 0.8rem;
+    }
+
+    .react-bs-container>.flex-item.second .overview {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .react-bs-container>.flex-item>.img {
+        width: 14rem;
+        height: 20rem;
+    }
+}

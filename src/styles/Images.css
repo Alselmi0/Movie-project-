@@ -1,0 +1,9 @@
+.images-container {
+    margin-top: 2rem;
+}
+
+.images-container>h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: white;
+}

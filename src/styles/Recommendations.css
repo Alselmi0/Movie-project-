@@ -1,0 +1,30 @@
+.recommendations-container {
+    margin-top: 2rem;
+}
+
+.recommendations-container>h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.recommendations-container .img {
+    border-radius: 4px;
+}
+
+.recommendations-container .img:hover {
+    filter: grayscale(100%);
+}
+
+.recommendations-container .recommendation-title {
+    bottom: 0;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75%;
+    opacity: 0.75;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,99 @@
+.bg::before {
+    content: "";
+    background-image: url("../assets/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    filter: blur(20px);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+h3.which-movies {
+    margin-top: 70px;
+    padding-top: 20px;
+}
+
+.movies-container {
+    color: white;
+}
+
+.movies-container>.row {
+    padding: 7px;
+}
+
+.movies-container>.row>.movie {
+    font-size: 1em;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.movies-container>.row>.movie:hover {
+    transition: 0.5s ease-in-out;
+
+    .img {
+        transform: scale(1.03);
+    }
+
+    .title {
+        color: #DC3545;
+    }
+}
+
+.movies-container>.row>.movie>.imdb-rating {
+    margin: 5px 0 0 8px;
+    display: flex;
+    gap: 6px;
+}
+
+.movies-container>.row>.movie>.imdb-rating>.bs-star-icon {
+    color: #f4e864;
+    height: 2em;
+    width: 1.2em;
+}
+
+.movies-container>.row>.movie>.imdb-rating>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    font-weight: bold;
+}
+
+.movies-container>.row>.movie>.title {
+    margin-left: 8px;
+    height: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+    .movies-container>.row>.movie {
+        font-size: 0.8em;
+    }
+
+    .movies-container>.row>.movie>.title {
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .movies-container>.row>.movie {
+        font-size: 0.7em;
+    }
+
+    .movies-container>.row>.movie>.title {
+        height: 1rem;
+    }
+}
