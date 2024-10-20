@@ -1,1 +1,1 @@
-this ia version of my movie project
+This is the first version of my movie project
